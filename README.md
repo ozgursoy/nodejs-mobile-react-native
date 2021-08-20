@@ -1,6 +1,20 @@
 
 # The Node.js for Mobile Apps React Native plugin
 
+## 🚨 Issues
+
+#### Android ignores underscore folders
+
+```
+defaultConfig {
+ ...
+ aaptOptions {
+        def defaultIgnorePattern = '!.svn:!.git:!.ds_store:!*.scc:.*:<dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~'
+        ignoreAssetsPattern defaultIgnorePattern + ':descript.ion:!*.yuml'
+    }
+ }
+```
+
 ## Reporting Issues
 
 We have a [central repo](https://github.com/janeasystems/nodejs-mobile/issues) where we manage all the issues related to Node.js for Mobile Apps, including issues specific to this plugin. Please, report your issue [there](https://github.com/janeasystems/nodejs-mobile/issues).
